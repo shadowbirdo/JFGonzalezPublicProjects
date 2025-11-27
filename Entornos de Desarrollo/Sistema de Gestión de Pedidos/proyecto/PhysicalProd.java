@@ -14,11 +14,13 @@ public class PhysicalProd extends Product{
         this.deliveryFee = deliveryFee;
     }
 
+    @Override
     public String toString(){
-        return super.toString() + "| Delivery fee: " + deliveryFee;
+        return super.toString() + " | Delivery fee: " + this.deliveryFee;
     }
 
+    @Override
     public float calcPrice(){
-        return super.getPrice() + deliveryFee;
+        return super.getPrice() + this.deliveryFee;
     }
 }

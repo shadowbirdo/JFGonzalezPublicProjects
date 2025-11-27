@@ -32,4 +32,8 @@ public class Client {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public String toString(){
+        return "Name: " + this.name + " | Mail: " + this.mail + " | Address: " + this.address;
+    }
 }

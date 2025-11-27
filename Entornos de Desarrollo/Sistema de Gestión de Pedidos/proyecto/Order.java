@@ -22,7 +22,7 @@ public class Order {
         this.products = new ArrayList<>();
     }
 
-    public void Order(Client client, List<Product> products){
+    public Order(Client client, List<Product> products){
         this.client = client;
         this.products = products;
     }
@@ -33,6 +33,8 @@ public class Order {
 
     public float calcTotal(){
         float totalPrice = 0;
+        for(Product product : products)
+            totalPrice += product.calcPrice();
         return totalPrice;
     }
 
@@ -45,7 +47,15 @@ public class Order {
          * ○​ Importe total.
          */
 
-        String summary = "";
+        String summary =    "Client data\n" +
+                            client.toString() + "\n\n" +
+                            "Productos comprados\n";
+        
+        for(Product product : products)
+            summary += "- " + product.getName();
+
+        summary += "Final price: " + this.calcTotal();
+
         return summary;
     }
 }
