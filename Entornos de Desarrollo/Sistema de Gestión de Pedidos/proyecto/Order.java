@@ -49,10 +49,10 @@ public class Order {
 
         String summary =    "Client data\n" +
                             client.toString() + "\n\n" +
-                            "Productos comprados\n";
+                            "Products in order\n";
         
         for(Product product : products)
-            summary += "- " + product.getName();
+            summary += "- " + product.getName() + "\n";
 
         summary += "Final price: " + this.calcTotal();
 

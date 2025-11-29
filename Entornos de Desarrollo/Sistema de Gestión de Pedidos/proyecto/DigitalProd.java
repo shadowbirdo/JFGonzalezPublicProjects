@@ -26,7 +26,7 @@ public class DigitalProd extends Product{
 
     @Override
     public String toString(){
-        return super.toString() + "License: " + this.license + " | Size (MB): " + this.sizeInMb;
+        return super.toString() + " License: " + this.license + " | Size (MB): " + this.sizeInMb;
     }
     
 }

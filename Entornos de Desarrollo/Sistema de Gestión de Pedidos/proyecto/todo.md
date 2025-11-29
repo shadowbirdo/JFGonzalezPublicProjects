@@ -7,7 +7,7 @@ Estructura de clases
 - [x] Clase Cliente: con atributos básicos y métodos de acceso.
 - [x] Clase Pedido: que contenga una lista de productos y un cliente.
 - [x] Métodos Pedido: agregarProducto(), calcularTotal(), mostrarResumen().
-- [ ] Clase Main o App: para crear objetos y probar el sistema.​
+- [x] Clase Main o App: para crear objetos y probar el sistema.​
 
 Relaciones a representar
 - [x]​ Herencia (Producto → ProductoFisico, ProductoDigital).
