@@ -1,3 +1,4 @@
+## Práctica 5 - Relaciones entre clases
 ### ¿Qué tipo de relación hay entre `Biblioteca` y `Sala`? ¿Por qué?
 *Tienen relación de agregación, ya que son un dato que existe independientemente primero y luego se agrega a la biblioteca. En realidad debería ser agregación.*
 ### ¿Qué pasaría con las salas si se destruye la biblioteca?
@@ -11,4 +12,7 @@
 ### ¿Dónde usarías `@Override` en tu implementación?
 *Lo he usado en todos los métodos .info() que heredan de las clases Book, User y Room.*
 
-![[CapturaFuncionando.png]]
+### Prueba de ejecución
+![Prueba de ejecución](assets/console_output.png)
+
+[\* Repositorio original del proyecto](https://github.com/shadowbirdo/DEVENV-OOP)

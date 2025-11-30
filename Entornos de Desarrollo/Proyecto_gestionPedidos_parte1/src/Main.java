@@ -38,11 +38,11 @@ public class Main {
         outputMsg += "----------------------------------------\n";
 
         // Verificación del resultado
-        // 30 (Kroket) + 10 (Video) + 14 (Duff) + 6 (Donut) = 60
+        // 30 (Kroket) + 9.5 (Video) + 14 (Duff) + 6 (Donut) = 60
         float total = order.calcTotal();
         outputMsg += "Total calculado: " + total + "\n\n";
         
-        if(total == 61.0f) outputMsg += ">> ¡Mosquis! Todo correcto.";
+        if(total == 59.5f) outputMsg += ">> ¡Mosquis! Todo correcto.";
         else outputMsg += ">> Multiplícate por cero (Error).";
 
         outputMsg += "\n";

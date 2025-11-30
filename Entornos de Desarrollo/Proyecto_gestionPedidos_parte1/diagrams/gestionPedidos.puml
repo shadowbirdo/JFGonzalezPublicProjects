@@ -44,6 +44,7 @@ class DigitalProd {
   +setLicense(license: String): void
   +setSizeInMb(sizeInMb: float): void
   +toString(): String
+  +calcPrice(): float
 }
 
 class Client {
@@ -78,7 +79,7 @@ class Main {
 
 Product <|-- PhysicalProd
 Product <|-- DigitalProd
-Order o-- Client
+Order -- Client
 Order o-- Product
 
 @enduml

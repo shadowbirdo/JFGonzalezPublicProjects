@@ -28,5 +28,10 @@ public class DigitalProd extends Product{
     public String toString(){
         return super.toString() + " License: " + this.license + " | Size (MB): " + this.sizeInMb;
     }
+
+    @Override
+    public float calcPrice(){
+        return super.getPrice() * 0.95f;
+    }
     
 }
