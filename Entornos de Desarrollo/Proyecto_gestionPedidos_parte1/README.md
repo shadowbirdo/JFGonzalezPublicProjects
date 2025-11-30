@@ -5,6 +5,8 @@ Proyecto desarrollado para el módulo de Entornos de Desarrollo. Implementación
 * **src/**: Código fuente.
 * **docs/**: Memoria del proyecto en PDF.
 * **diagrams/**: Diagramas UML (.puml, .svg, .png).
+* **tools/**: Herramientas utilizadas.
+* **assets/**: Capturas de pantalla y recursos.
 
 ### Instrucciones de Ejecución
 1. Compilar los archivos desde la carpeta `src`:
