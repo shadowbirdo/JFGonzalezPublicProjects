@@ -13,7 +13,7 @@ public class Main {
             "742 de Evergreen Terrace"
         );
         
-        outputMsg += "Cliente:\n" + homer.getName();
+        outputMsg += "Cliente:\n" + homer.getName() + "\n";
 
         
         // 2. Productos
