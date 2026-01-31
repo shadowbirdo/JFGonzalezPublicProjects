@@ -13,7 +13,6 @@ note right of Instanciada : Lista de productos vacía
 Instanciada --> EnConstruccion : addProduct(primero)
 
 state EnConstruccion {
-    ' Transición interna (el estado no cambia, solo se actualiza)
     EnConstruccion --> EnConstruccion : addProduct(otro)
 }
 

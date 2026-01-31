@@ -13,12 +13,6 @@ loop Para cada producto en la lista
     Order -> Product : calcPrice()
     activate Product
     
-    note right
-        Polimorfismo:
-        - Físico: precio + envío
-        - Digital: precio * 0.95
-    end note
-    
     Product --> Order : float precio
     deactivate Product
     
@@ -28,10 +22,10 @@ end
 Order --> User : float totalCalculado
 deactivate Order
 
-alt Pago Exitoso / Total Correcto
+alt Pago Exitoso
     User -> User : Mostrar "Pedido Confirmado"
     
-else Pago Fallido / Error
+else Pago Fallido
     User -> User : Mostrar "Error en el pago"
 end
 @enduml

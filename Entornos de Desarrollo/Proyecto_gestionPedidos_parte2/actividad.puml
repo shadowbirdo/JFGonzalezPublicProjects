@@ -15,10 +15,12 @@ fork
     :Sumar Precio + Coste de Envío;
 fork again
     :Identificar Producto Digital;
-    :Aplicar Descuento / IVA;
+    :Aplicar Descuento;
 end fork
 
 :Calcular Total Final;
+
+|Cliente|
 :Mostrar Resumen del Pedido;
 stop
 

@@ -3,7 +3,6 @@ left to right direction
 skinparam packageStyle rectangle
 
 actor "Cliente" as c
-actor "Sistema" as s
 
 rectangle "Tienda" {
     usecase "Registrar cliente" as regcliente
@@ -18,14 +17,11 @@ rectangle "Tienda" {
     c -- regcliente
     c -- gespedido
 
-    regcliente -- s
-    calcimporte -- s
-    resumen -- s
 
     gespedido ..> calcimporte : <<include>>
     gespedido ..> resumen : <<include>>
 
-    descdigital .> calcimporte : <<extend>>
-    envio .> calcimporte : <<extend>>
+    descdigital ..> calcimporte : <<extend>>
+    envio ..> calcimporte : <<extend>>
 }
 @enduml
