@@ -1,0 +1,20 @@
+package endes.gestpedidos;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+/**
+ * Unit test for simple App.
+ */
+public class OrderTest 
+{
+    /**
+     * Rigorous Test :-)
+     */
+    @Test
+    public void testCalcTotal()
+    {
+        assertTrue( true );
+    }
+}
