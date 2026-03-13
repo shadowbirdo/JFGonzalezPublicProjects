@@ -19,26 +19,25 @@ public class Order {
     private Client client;
     private List&lt;Product&gt; products;
     
-<span class="fc" id="L22">    public Order(Client client){</span>
-<span class="fc" id="L23">        this.client = client;</span>
-<span class="fc" id="L24">        this.products = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L25">    }</span>
+    public Order(Client client){
+<span class="fc" id="L23">        this(client, new ArrayList&lt;&gt;());</span>
+<span class="fc" id="L24">    }</span>
 
-<span class="nc" id="L27">    public Order(Client client, List&lt;Product&gt; products){</span>
-<span class="nc" id="L28">        this.client = client;</span>
-<span class="nc" id="L29">        this.products = products;</span>
-<span class="nc" id="L30">    }</span>
+<span class="fc" id="L26">    public Order(Client client, List&lt;Product&gt; products){</span>
+<span class="fc" id="L27">        this.client = client;</span>
+<span class="fc" id="L28">        this.products = products;</span>
+<span class="fc" id="L29">    }</span>
 
     public void addProduct(Product productToAdd){
-<span class="fc" id="L33">        this.products.add(productToAdd);</span>
-<span class="fc" id="L34">    }</span>
+<span class="fc" id="L32">        this.products.add(productToAdd);</span>
+<span class="fc" id="L33">    }</span>
 
     public float calcTotal(){
-<span class="fc bfc" id="L37" title="All 2 branches covered.">        if (products.isEmpty()) throw new IllegalStateException(&quot;El pedido está vacío&quot;);</span>
-<span class="fc" id="L38">        float totalPrice = 0;</span>
-<span class="fc bfc" id="L39" title="All 2 branches covered.">        for(Product product : products)</span>
-<span class="fc" id="L40">            totalPrice += product.calcPrice();</span>
-<span class="fc" id="L41">        return totalPrice;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if (products.isEmpty()) throw new IllegalStateException(&quot;El pedido está vacío&quot;);</span>
+<span class="fc" id="L37">        float totalPrice = 0;</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        for(Product product : products)</span>
+<span class="fc" id="L39">            totalPrice += product.calcPrice();</span>
+<span class="fc" id="L40">        return totalPrice;</span>
     }
 
     public String showSummary(){
@@ -50,17 +49,17 @@ public class Order {
          * ○​ Importe total.
          */
 
-<span class="nc" id="L53">        StringBuilder summary = new StringBuilder();</span>
-<span class="nc" id="L54">        summary.append(&quot;Client data\n&quot;);</span>
-<span class="nc" id="L55">        summary.append(&quot;%s%n%n&quot;.formatted(client.toString()));</span>
-<span class="nc" id="L56">        summary.append(&quot;Products in order\n&quot;);</span>
+<span class="fc" id="L52">        StringBuilder summary = new StringBuilder();</span>
+<span class="fc" id="L53">        summary.append(&quot;Client data\n&quot;);</span>
+<span class="fc" id="L54">        summary.append(&quot;%s%n%n&quot;.formatted(client.toString()));</span>
+<span class="fc" id="L55">        summary.append(&quot;Products in order\n&quot;);</span>
         
-<span class="nc bnc" id="L58" title="All 2 branches missed.">        for(Product product : products)</span>
-<span class="nc" id="L59">            summary.append(&quot;- %s%n&quot;.formatted(product.getName()));</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">        for(Product product : products)</span>
+<span class="fc" id="L58">            summary.append(&quot;- %s%n&quot;.formatted(product.getName()));</span>
 
-<span class="nc" id="L61">        summary.append(&quot;Final price: %.2f&quot;.formatted(this.calcTotal()));</span>
+<span class="fc" id="L60">        summary.append(&quot;Final price: %.2f&quot;.formatted(this.calcTotal()));</span>
 
-<span class="nc" id="L63">        return summary.toString();</span>
+<span class="fc" id="L62">        return summary.toString();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

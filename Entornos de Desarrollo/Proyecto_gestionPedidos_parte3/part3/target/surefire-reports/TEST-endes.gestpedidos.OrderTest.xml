@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="endes.gestpedidos.OrderTest" time="0.107" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="endes.gestpedidos.OrderTest" time="0.097" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-21.0.9-oracle-x64/lib"/>
-    <property name="sun.java.command" value="/home/shadow_birdo/10_Local_Projects/REPOS/JFGonzalezPublicProjects/Entornos de Desarrollo/Proyecto_gestionPedidos_parte3/part3/target/surefire/surefirebooter-20260313193548994_3.jar /home/shadow_birdo/10_Local_Projects/REPOS/JFGonzalezPublicProjects/Entornos de Desarrollo/Proyecto_gestionPedidos_parte3/part3/target/surefire 2026-03-13T19-35-48_953-jvmRun1 surefire-20260313193548994_1tmp surefire_0-20260313193548994_2tmp"/>
+    <property name="sun.java.command" value="/home/shadow_birdo/10_Local_Projects/REPOS/JFGonzalezPublicProjects/Entornos de Desarrollo/Proyecto_gestionPedidos_parte3/part3/target/surefire/surefirebooter-20260313203952724_3.jar /home/shadow_birdo/10_Local_Projects/REPOS/JFGonzalezPublicProjects/Entornos de Desarrollo/Proyecto_gestionPedidos_parte3/part3/target/surefire 2026-03-13T20-39-52_680-jvmRun1 surefire-20260313203952724_1tmp surefire_0-20260313203952724_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/shadow_birdo/10_Local_Projects/REPOS/JFGonzalezPublicProjects/Entornos de Desarrollo/Proyecto_gestionPedidos_parte3/part3/target/test-classes:/home/shadow_birdo/10_Local_Projects/REPOS/JFGonzalezPublicProjects/Entornos de Desarrollo/Proyecto_gestionPedidos_parte3/part3/target/classes:/home/shadow_birdo/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.3/junit-jupiter-6.0.3.jar:/home/shadow_birdo/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.3/junit-jupiter-api-6.0.3.jar:/home/shadow_birdo/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/shadow_birdo/.m2/repository/org/junit/platform/junit-platform-commons/6.0.3/junit-platform-commons-6.0.3.jar:/home/shadow_birdo/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/shadow_birdo/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/shadow_birdo/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.3/junit-jupiter-params-6.0.3.jar:/home/shadow_birdo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.3/junit-jupiter-engine-6.0.3.jar:/home/shadow_birdo/.m2/repository/org/junit/platform/junit-platform-engine/6.0.3/junit-platform-engine-6.0.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/shadow_birdo/10_Local_Projects/REPOS/JFGonzalezPublicProjects/Entornos de Desarrollo/Proyecto_gestionPedidos_parte3/part3/target/surefire/surefirebooter-20260313193548994_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/shadow_birdo/10_Local_Projects/REPOS/JFGonzalezPublicProjects/Entornos de Desarrollo/Proyecto_gestionPedidos_parte3/part3/target/surefire/surefirebooter-20260313203952724_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.9+7-LTS-338"/>
     <property name="user.name" value="shadow_birdo"/>
@@ -53,10 +53,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testCalcTotalIncorrectValues(float)[1]" classname="endes.gestpedidos.OrderTest" time="0.019"/>
-  <testcase name="testCalcTotalIncorrectValues(float)[2]" classname="endes.gestpedidos.OrderTest" time="0.001"/>
+  <testcase name="testShowSummary" classname="endes.gestpedidos.OrderTest" time="0.003"/>
+  <testcase name="testCalcTotalIncorrectValues(float)[1]" classname="endes.gestpedidos.OrderTest" time="0.008"/>
+  <testcase name="testCalcTotalIncorrectValues(float)[2]" classname="endes.gestpedidos.OrderTest" time="0.0"/>
   <testcase name="testCalcTotalIncorrectValues(float)[3]" classname="endes.gestpedidos.OrderTest" time="0.001"/>
-  <testcase name="testCalcTotalParameterized(float, float, float)[1]" classname="endes.gestpedidos.OrderTest" time="0.008"/>
+  <testcase name="testCalcTotalParameterized(float, float, float)[1]" classname="endes.gestpedidos.OrderTest" time="0.01"/>
   <testcase name="testCalcTotalParameterized(float, float, float)[2]" classname="endes.gestpedidos.OrderTest" time="0.0"/>
   <testcase name="testCalcTotalParameterized(float, float, float)[3]" classname="endes.gestpedidos.OrderTest" time="0.001"/>
   <testcase name="testEmptyOrderThrowsException" classname="endes.gestpedidos.OrderTest" time="0.002"/>

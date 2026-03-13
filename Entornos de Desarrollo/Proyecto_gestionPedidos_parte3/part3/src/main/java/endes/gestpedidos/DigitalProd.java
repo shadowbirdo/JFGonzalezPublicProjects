@@ -4,6 +4,10 @@ public class DigitalProd extends Product{
     private String license;
     private float sizeInMb;
 
+    public DigitalProd(String name, float price) {
+        this(name, price, null, 0);
+    }
+
     public DigitalProd(String name, float price, String license, float sizeInMb){
         super(name, price);
         this.license = license;

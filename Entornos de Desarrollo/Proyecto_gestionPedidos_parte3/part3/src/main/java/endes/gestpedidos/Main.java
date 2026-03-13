@@ -2,6 +2,10 @@ package endes.gestpedidos;
 
 public class Main {
     public static void main(String[] args) {
+        executeLogic();
+    }
+
+    public static void executeLogic() {
         final String hBar =  "----------------------------------------\n";
         String outputMsg = "";
 
@@ -51,6 +55,5 @@ public class Main {
         outputMsg += "\n";
 
         System.out.println(outputMsg);
-
     }
 }

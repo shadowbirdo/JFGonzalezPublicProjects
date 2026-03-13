@@ -20,8 +20,7 @@ public class Order {
     private List<Product> products;
     
     public Order(Client client){
-        this.client = client;
-        this.products = new ArrayList<>();
+        this(client, new ArrayList<>());
     }
 
     public Order(Client client, List<Product> products){
