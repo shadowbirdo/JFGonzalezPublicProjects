@@ -34,6 +34,7 @@ public class Order {
     }
 
     public float calcTotal(){
+        if (products.isEmpty()) throw new IllegalStateException("El pedido está vacío");
         float totalPrice = 0;
         for(Product product : products)
             totalPrice += product.calcPrice();
@@ -49,15 +50,16 @@ public class Order {
          * ○​ Importe total.
          */
 
-        String summary =    "Client data\n" +
-                            client.toString() + "\n\n" +
-                            "Products in order\n";
+        StringBuilder summary = new StringBuilder();
+        summary.append("Client data\n");
+        summary.append("%s%n%n".formatted(client.toString()));
+        summary.append("Products in order\n");
         
         for(Product product : products)
-            summary += "- " + product.getName() + "\n";
+            summary.append("- %s%n".formatted(product.getName()));
 
-        summary += "Final price: " + this.calcTotal();
+        summary.append("Final price: %.2f".formatted(this.calcTotal()));
 
-        return summary;
+        return summary.toString();
     }
 }

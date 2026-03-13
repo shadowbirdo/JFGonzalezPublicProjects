@@ -2,11 +2,12 @@ package endes.gestpedidos;
 
 public class Main {
     public static void main(String[] args) {
+        final String hBar =  "----------------------------------------\n";
         String outputMsg = "";
 
-        outputMsg += "----------------------------------------\n";
+        outputMsg += hBar;
         outputMsg += "      TEST SISTEMA: EL BADULAQUE        \n";
-        outputMsg += "----------------------------------------\n";
+        outputMsg += hBar;
 
         // 1. Cliente
         Client homer = new Client(
@@ -35,9 +36,9 @@ public class Main {
         outputMsg += "Productos añadidos...\n";
 
         // 4. Resultados
-        outputMsg += "----------------------------------------\n";
+        outputMsg += hBar;
         outputMsg += order.showSummary() + "\n";
-        outputMsg += "----------------------------------------\n";
+        outputMsg += hBar;
 
         // Verificación del resultado
         // 30 (Kroket) + 9.5 (Video) + 14 (Duff) + 6 (Donut) = 60

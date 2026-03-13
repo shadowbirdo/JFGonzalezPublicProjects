@@ -4,9 +4,11 @@ public abstract class Product {
     private String name;
     private float price;
 
-    public Product(String name, float price){
+    protected Product(String name, float price){
         this.name = name;
         this.price = price;
+
+        if (price < 0) throw new IllegalArgumentException("El precio no puede ser negativo.");
     }
 
     public String getName() {
@@ -31,5 +33,5 @@ public abstract class Product {
 
     public float calcPrice(){
         return this.price;
-    };
+    }
 }
